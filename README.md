@@ -18,25 +18,27 @@ Transitioned from backend data validation to a high-fidelity Power BI executive 
 
 ## 🧩 Data Modeling
 * **Star Schema Implementation:** Designed a custom `Calendar` dimension table to handle time-series analysis, overcoming the limitations of standard auto-date hierarchies.
-*  **Relational Mapping:** Established One-to-Many relationships between the Calendar and Sales tables to enable seamless filtering across months and regions.
+* **Relational Mapping:** Established One-to-Many relationships between the Calendar and Sales tables to enable seamless filtering across months and regions.
+
+
 
 ## 🧪 DAX & Business Logic
 Developed a suite of custom Data Analysis Expressions (DAX) to drive the "Big Three" KPI cards:
 * **Total Revenue:** Dynamic sum of sales after data casting.
 * **Total Profit:** Aggregated profit margins per product line.
-* **Total Margin %:** A calculated ratio ($Total Profit / Total Revenue$) formatted to provide immediate executive "Health Checks" (35.18% overall).
+* **Profit Margin %:** A calculated ratio $$\frac{\text{Total Profit}}{\text{Total Revenue}}$$ formatted to provide immediate executive "Health Checks" (35.18% overall).
 
 ## 🎨 Dashboard Features & UX
-* **Geospatial Intelligence:** Integrated Bing Maps to visualize regional revenue hotspots, identifying Glasgow as a primary growth hub.
+* **Geospatial Intelligence:** Integrated Bing Maps to visualize regional revenue hotspots, identifying **Glasgow** as a primary growth hub.
 * **Interaction Drill-Downs:** Implemented a **Region Slicer** to allow stakeholders to instantly toggle between city-specific performances.
 * **Product Performance:** Used a Clustered Bar Chart to identify **Running Shoes** as the most profitable item, despite "Sports" being a broad category.
 
 ## 🏁 Final Project Conclusions
-* **The "February Spike":** By connecting SQL findings to Power BI visuals, I confirmed a **35.94% revenue increase** in February, providing a data-driven basis for seasonal marketing adjustments.
-*  **VIP Segmentation:** The dashboard successfully visualizes the Pareto analysis, making high-value customer identification a 1-click process for the sales team.
+* **The "February Spike":** By connecting SQL findings to Power BI visuals, I confirmed a **35.94% MoM revenue increase** in February, providing a data-driven basis for seasonal marketing adjustments.
+* **VIP Segmentation:** The dashboard successfully visualizes the Pareto analysis, making high-value customer identification a 1-click process for the sales team.
 
 ## 📸 Final Dashboard
-
+![Final Dashboard Screenshot](Screenshots/Day%202%20-%20UK%20Retail%20Sales%20Dashboard.png)
 
 ## 📂 Repository Contents
 * `/SQL_Scripts`: Contains advanced queries for MoM growth and customer segmentation.
